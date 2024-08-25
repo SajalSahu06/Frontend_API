@@ -14,7 +14,7 @@ const App = () => {
   const handleSubmit = async () => {
     try {
       const data = JSON.parse(jsonInput);
-      const response = await axios.post('http://localhost:8000/bfhl', { data });
+      const response = await axios.post('https://backend-api-klgp.onrender.com/bfhl', { data });
       setResponseData(response.data);
     } catch (error) {
       console.error('Error:', error.message);
